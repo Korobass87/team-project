@@ -1,0 +1,60 @@
+.about {
+}
+.about__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__image {
+}
+.about__title {
+  font-family: $font;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+
+  text-align: center;
+  padding: 0;
+}
+.about__description {
+  font-family: Montserrat;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $text;
+}
+.about__description:not(:last-child) {
+  margin-bottom: 15px;
+}
+.about__extra-description {
+  display: none;
+  font-family: Montserrat;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $text;
+}
+.read-more {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.61;
+
+  color: $btn-color;
+}
+#read-more:checked ~ .about__extra-description {
+  display: block;
+}
+.less {
+  display: none;
+}
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+#read-more:checked ~ .read-more .less {
+  display: inline;
+}
