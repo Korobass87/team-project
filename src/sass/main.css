@@ -47,4 +47,10 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.reviews__container {
+  width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*# sourceMappingURL=main.css.map */
