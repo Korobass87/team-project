@@ -1,9 +1,15 @@
 .reviews {
   padding-bottom: 30px;
   &__container {
-    width: 290px;
+    width: 320px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 
   &__title {
@@ -14,8 +20,19 @@
     line-height: 2.7;
     text-align: center;
   }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+  }
   &__item:nth-child(2n + 1) {
     display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   &__subtitle {
@@ -70,7 +87,7 @@
 
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 25%;
     width: 35px;
     height: 1px;
     background-color: $btn-color;
@@ -81,7 +98,7 @@
 
     position: absolute;
     top: 50%;
-    right: 30%;
+    right: 25%;
     width: 35px;
     height: 1px;
     background-color: $btn-color;
