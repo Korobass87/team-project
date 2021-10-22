@@ -1,7 +1,89 @@
 .reviews {
+  padding-bottom: 30px;
   &__container {
-    width: 800px;
+    width: 290px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  &__title {
+    font-family: Caveat Brush;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 2.7;
+    text-align: center;
+  }
+  &__item:nth-child(2n + 1) {
+    display: none;
+  }
+
+  &__subtitle {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 4.64;
+    color: $text;
+    text-align: center;
+  }
+
+  &__opinion {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: $text;
+  }
+  &__photo {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__svg-wrap {
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+  }
+  &__star {
+    fill: $btn-color;
+  }
+  &__pagination {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: $btn-color;
+  }
+  &__wrap-pagination {
+    position: relative;
+  }
+  &__pagination::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 35px;
+    height: 1px;
+    background-color: $btn-color;
+  }
+
+  &__pagination::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    width: 35px;
+    height: 1px;
+    background-color: $btn-color;
   }
 }
