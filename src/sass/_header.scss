@@ -1,27 +1,20 @@
-.header--geometry {
-  background-color: $bg-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .header__container {
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
     width: 320px;
-    padding: 7px 48px;
+    // padding: 7px 48px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 768px;
-    padding: 27px 68px;
+    width: 634px;
+    // padding: 27px 68px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding: 31px 229px;
+    width: 824px;
+    // padding: 31px 229px;
   }
 }
 
@@ -51,7 +44,7 @@
   }
 }
 
-.header__button {
+.header__link {
   display: flex;
   align-items: center;
 
@@ -131,7 +124,7 @@
     color: $text;
   }
 
-  &__button-link {
+  &__link {
     font-family: $font-sec;
     font-style: normal;
     font-weight: 400;
