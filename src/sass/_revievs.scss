@@ -8,14 +8,14 @@
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-left: 70px;
-      padding-right: 70px;
+      width: 634px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-      padding-left: 70px;
-      padding-right: 70px;
+    @media screen and (min-width: 1280px) {
+      width: 824px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -34,7 +34,7 @@
       justify-content: center;
       align-items: start;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 700px;
       margin-left: auto;
       margin-right: auto;
@@ -44,6 +44,14 @@
     display: none;
     @media screen and (min-width: 768px) {
       display: block;
+    }
+  }
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 38px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 60px;
     }
   }
 
@@ -66,7 +74,13 @@
     line-height: 1.25;
     color: $text;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      width: 626px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
+
   &__photo {
     border-radius: 50%;
     margin-left: auto;
@@ -106,10 +120,10 @@
     height: 1px;
     background-color: $btn-color;
     @media screen and (min-width: 768px) {
-      left: 39%;
+      left: 40%;
     }
-    @media screen and (min-width: 1200px) {
-      left: 43%;
+    @media screen and (min-width: 1280px) {
+      left: 44%;
     }
   }
 
@@ -122,10 +136,10 @@
     height: 1px;
     background-color: $btn-color;
     @media screen and (min-width: 768px) {
-      right: 39%;
+      right: 40%;
     }
-    @media screen and (min-width: 1200px) {
-      right: 43%;
+    @media screen and (min-width: 1280px) {
+      right: 44%;
     }
   }
 }
