@@ -44,6 +44,7 @@
   margin-bottom: 25px;
   width: 100%;
   padding: 2px 0px;
+  outline: none;
 
   &::placeholder {
     color: $placeholder;
@@ -52,11 +53,6 @@
     border-color: red;
   }
 
-    &:active,
-    :hover,
-    :focus {
-
-    }
 }
 
 .contact__btn {
