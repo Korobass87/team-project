@@ -1,8 +1,3 @@
-.about {
-  @media screen and(min-width: 768px) {
-    padding-top: 6px;
-  }
-}
 .about__container {
   margin-left: auto;
   margin-right: auto;
@@ -10,20 +5,19 @@
   @media screen and (max-width: 767px) {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
 
-    @media screen and (min-width: 320px) {
-      width: 320px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 634px;
-    }
-    @media screen and (min-width: 1280px) {
-      position: relative;
-      width: 824px;
-      display: flex;
-      justify-content: right;
-    }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 634px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 824px;
   }
 }
 
@@ -86,6 +80,10 @@
   @media screen and(max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
+  }
+  @media screen and(min-width: 768px) {
+    position: absolute;
+    left: -58px;
   }
   @media screen and(min-width: 1280px) {
     position: absolute;
