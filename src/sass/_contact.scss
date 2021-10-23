@@ -1,0 +1,82 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__title {
+  font-family: $font-sec;
+  font-size: 24px;
+  line-height: 2.7;
+  color: $text;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 265px;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.4;
+
+  @media screen and (min-width: 768px) {
+    width: 410px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 430px;
+  }
+}
+.contact__appeal {
+  color: $text;
+  margin-bottom: 27px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+.contact__input {
+  border: none;
+  border-bottom: 1px solid $btn-color;
+  margin-bottom: 25px;
+  width: 100%;
+  padding: 2px 0px;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
+
+  //   &:active,
+  //   :hover,
+  //   :focus {
+
+  //   }
+}
+
+.contact__btn {
+  font-family: $font-sec;
+  font-size: 18px;
+  width: 145px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  background-color: $btn-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 158px;
+    height: 45px;
+    font-size: 24px;
+  }
+  // &:active,
+  //     :hover,
+  //     :focus {
+
+  //     }
+}
