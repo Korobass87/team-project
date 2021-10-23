@@ -3,12 +3,11 @@
         <h2 class="reviews__title">Reviews</h2>
         <ul class="reviews__list">
             <li class="reviews__item"><article class="reviews__thumb">
-                <img srcset="./images/reviews/tabl reviews 2@1x.jpg 115w, 
-                ./images/reviews/desk reviews 2@1x.jpg 142w, 
-                ./images/reviews/tabl reviews 2@2x.jpg 230w,
-                ./images/reviews/desk reviews 2@2x.jpg 284w"
-                sizes="(min-width:1200px) 142px, (min-width:768px) 115px, 100vw" 
-                 src="./images/reviews/tabl reviews 2@1x.jpg" alt="photo reviews" class="reviews__photo">
+                <picture>
+                <source srcset="./images/reviews/tabl_2@1x.jpg 1x, ./images/reviews/tabl_2@2x.jpg 2x" type="image/jpeg" media="(min-width:768px)">
+                <source srcset="./images/reviews/desk_2@1x.jpg 1x, ./images/reviews/desk_2@2x.jpg 2x" type="image/jpeg" media="(min-width:1200px)">
+                </picture>
+                <img src="./images/reviews/tabl_2@1x.jpg" alt="photo reviews" class="reviews__photo">
                 <div class="reviews__svg-wrap">
                 <svg class="reviews__star" width="24px" height="24px">
                     <use href="./images/svg/sprite.svg#icon-star"></use>
@@ -29,7 +28,7 @@
                 <p class="reviews__subtitle">John</p>
             </article></li>
             <li  class="reviews__item"><article class="reviews__thumb">
-                <img src="./images/reviews/mob reviews @1x.jpg" alt="photo reviews" class="reviews__photo">
+                <img src="./images/reviews/mob_@1x.jpg" alt="photo reviews" class="reviews__photo">
                   <div class="reviews__svg-wrap">
                 <svg class="reviews__star" width="24px" height="24px"> 
                 <use href="./images/svg/sprite.svg#icon-star"></use> </svg>  
@@ -53,7 +52,7 @@
                 to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen!
                 Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!</p></article></li>
             <li  class="reviews__item"><article class="reviews__thumb">
-                <img src="./images/reviews/desk reviews 1@1x.jpg" alt="photo reviews" class="reviews__photo">
+                <img src="./images/reviews/tabl_1@1x.jpg" alt="photo reviews" class="reviews__photo">
                 <div class="reviews__svg-wrap">
                 <svg class="reviews__star" width="24px" height="24px">
                     <use href="./images/svg/sprite.svg#icon-star"></use>

@@ -33,7 +33,7 @@
       display: flex;
       justify-content: center;
       align-items: start;
-      width: 626px;
+      //   width: 626px;
     }
   }
   &__item:nth-child(2n + 1) {
@@ -61,6 +61,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: $text;
+    text-align: center;
   }
   &__photo {
     border-radius: 50%;
