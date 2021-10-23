@@ -4,17 +4,17 @@
 
   @media screen and (max-width: 767px) {
     width: 320px;
-    // padding: 7px 48px;
+    padding: 7px 48px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 634px;
-    // padding: 27px 68px;
+    padding-top: 27px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 824px;
-    // padding: 31px 229px;
+    padding-top: 31px;
   }
 }
 
@@ -156,7 +156,7 @@
 
 .header__subtitle {
   @media screen and (max-width: 767px) {
-    margin-bottom: 25px;
+    margin-bottom: 37px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {

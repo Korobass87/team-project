@@ -2,9 +2,28 @@
   <div class="header__container">
     <nav class="header__nav">
       <div class="header__top">
-        <a href="#" class="header__logo"
-          ><img class="header__image" src="/images/header/logo-mob-and-tab.png" alt="Логотип сайта"
-        /></a>
+        <a href="#" class="header__logo">
+          <picture>
+            <source
+              srcset="
+                ./images/header/logo-mob-and-tab.png    1x,
+                ./images/header/logo@2x-mob-and-tab.png 2x
+              "
+              media="(max-width: 1279px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/header/logo-desk.png 1x, ./images/header/logo@2x-desk.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <img
+              class="header__image"
+              src="./images/header/logo-mob-and-tab.png"
+              alt="Логотип сайта"
+            />
+          </picture>
+        </a>
 
         <!-- Кнопка открытия меню -->
         <button class="menu__button menu__button--open" type="button">
