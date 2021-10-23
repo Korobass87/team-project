@@ -3,7 +3,12 @@
         <h2 class="reviews__title">Reviews</h2>
         <ul class="reviews__list">
             <li class="reviews__item"><article class="reviews__thumb">
-                <img src="./images/reviews/desk reviews 2@1x.jpg" alt="photo reviews" class="reviews__photo">
+                <img srcset="./images/reviews/tabl reviews 2@1x.jpg 115w, 
+                ./images/reviews/desk reviews 2@1x.jpg 142w, 
+                ./images/reviews/tabl reviews 2@2x.jpg 230w,
+                ./images/reviews/desk reviews 2@2x.jpg 284w"
+                sizes="(min-width:1200px) 142px, (min-width:768px) 115px, 100vw" 
+                 src="./images/reviews/tabl reviews 2@1x.jpg" alt="photo reviews" class="reviews__photo">
                 <div class="reviews__svg-wrap">
                 <svg class="reviews__star" width="24px" height="24px">
                     <use href="./images/svg/sprite.svg#icon-star"></use>
@@ -42,7 +47,8 @@
                 </svg>
                 </div>
                 <p class="reviews__subtitle">Will</p>
-                <p class="reviews__opinion">Last time I have visited a cooking course by Eva
+                <p class="reviews__opinion">
+                    Last time I have visited a cooking course by Eva 
                 I was impressed with the way she explained everything
                 to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen!
                 Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!</p></article></li>
