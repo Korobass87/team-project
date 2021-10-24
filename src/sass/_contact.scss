@@ -1,8 +1,24 @@
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 1279px) and (min-width: 768px) {
+    max-width: 554px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 854px;
+    padding: 0;
+  }
+  &--contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 .contact__title {
   font-family: $font-sec;
   font-size: 24px;
@@ -45,6 +61,7 @@
   width: 100%;
   padding: 2px 0px;
   outline: none;
+  background-color: $main-bg-color;
 
   &::placeholder {
     color: $placeholder;
@@ -52,7 +69,6 @@
   &:not(:placeholder-shown):required:invalid {
     border-color: red;
   }
-
 }
 
 .contact__btn {
@@ -73,7 +89,8 @@
     height: 45px;
     font-size: 24px;
   }
-  &:hover,&:focus {
-        background-color: #aa6543;
-      }
+  &:hover,
+  &:focus {
+    background-color: #aa6543;
+  }
 }
