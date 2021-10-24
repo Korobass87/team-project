@@ -125,6 +125,9 @@
   font-size: 16px;
   line-height: 1.25;
   color: $text;
+  @media screen and(min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 .program__item {
   list-style-image: url();
@@ -140,6 +143,7 @@
   }
   @media screen and(min-width: 1280px) {
     max-width: 392px;
+    margin-top: 97px;
   }
 }
 .program__circle {
