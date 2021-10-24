@@ -33,25 +33,18 @@
   }
 }
 .social-list__link {
-  border-radius: 50%;
   color: $text;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit;
-  transition: color $fortransitions, background-color $fortransitions;
+  transition: color $fortransitions;
 
   &:hover,
   &:focus,
   &:active {
-    width: 24px;
-    height: 24px;
-    color: $btn-color;
-    background-color: $bg-color;
+    color: #aa6543;
   }
 }
 .social-list__icon {
   fill: currentColor;
+  display: block;
 }
 .auth-nav__list {
   display: flex;
@@ -66,7 +59,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: #ab816c;
+    color: #aa6543;
   }
 }
 .auth-nav__icon {
