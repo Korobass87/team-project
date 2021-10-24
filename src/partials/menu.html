@@ -1,0 +1,34 @@
+<div class="menu menu--container js-menu-container" id="mobile-menu">
+  <div class="menu__top">
+    <a href="#" class="menu__logo">
+      <picture>
+        <source
+          srcset="./images/header/logo-menu.png 1x, ./images/header/logo@2x-menu.png 2x"
+          media="(max-width: 1279px)"
+          type="image/png"
+        />
+        <img class="menu__image" src="/images/header/logo-menu.png" alt="Логотип сайта" />
+      </picture>
+    </a>
+
+    <button
+      type="button"
+      class="menu__button js-close-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="18" height="18" aria-label="Переключатель мобильного меню">
+        <use href="./images/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <ul class="menu__list">
+    <li class="menu__item">
+      <a class="menu__nav-link menu__nav-link--accent" href="#about">About us</a>
+    </li>
+    <li class="menu__item"><a class="menu__nav-link" href="#program">Program</a></li>
+    <li class="menu__item"><a class="menu__nav-link" href="#reviews">Reviews</a></li>
+    <li class="menu__item"><a class="menu__nav-link" href="#contacts">Contacts</a></li>
+  </ul>
+</div>
