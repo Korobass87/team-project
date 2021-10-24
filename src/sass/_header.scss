@@ -1,7 +1,6 @@
 .header--geometry {
   @media screen and (max-width: 767px) {
     padding-top: 7px;
-    // padding-bottom: 48px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -18,8 +17,6 @@
 .header__container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 19px;
-  padding-right: 19px;
 
   @media screen and (max-width: 767px) {
     width: 320px;
@@ -31,8 +28,6 @@
 
   @media screen and (min-width: 1280px) {
     width: 824px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -46,6 +41,7 @@
 
 .header__top {
   display: flex;
+
   @media screen and (max-width: 767px) {
     justify-content: center;
     margin-bottom: 33px;
@@ -55,10 +51,8 @@
     justify-content: flex-start;
     margin-bottom: 10px;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .header__logo {
+  @media screen and (min-width: 1280px) {
     margin-right: 38px;
   }
 }
