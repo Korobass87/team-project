@@ -64,15 +64,16 @@
   border: none;
   color: #fff;
   background-color: $btn-color;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
 
   @media screen and (min-width: 1280px) {
     width: 158px;
     height: 45px;
     font-size: 24px;
   }
-  // &:active,
-  //     :hover,
-  //     :focus {
-
-  //     }
+  &:hover,&:focus {
+        background-color: #aa6543;
+      }
 }
