@@ -32,6 +32,9 @@
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
+<<<<<<< HEAD
+>>>>>>> parent of 369ed37 (add styles)
+=======
 >>>>>>> parent of 369ed37 (add styles)
   }
 }
@@ -136,6 +139,7 @@
 }
 .program__list {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
@@ -146,11 +150,14 @@
   }
 =======
 >>>>>>> parent of 369ed37 (add styles)
+=======
+>>>>>>> parent of 369ed37 (add styles)
 }
 .program__item {
   list-style-image: url();
 }
 .program__circles {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   flex-direction: row;
@@ -175,11 +182,16 @@
 }
 .program__circle {
 >>>>>>> parent of 369ed37 (add styles)
+=======
+}
+.program__circle {
+>>>>>>> parent of 369ed37 (add styles)
   position: relative;
   width: 142px;
   border-radius: 50%;
   background: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin-right: 6px;
   margin-bottom: 57px;
@@ -204,12 +216,15 @@
   }
 =======
 >>>>>>> parent of 369ed37 (add styles)
+=======
+>>>>>>> parent of 369ed37 (add styles)
 }
 .program__donut {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
+<<<<<<< HEAD
 }
 .program__subtitle {
   font-family: $font-sec;
@@ -239,4 +254,6 @@
     height: 25px;
     margin-bottom: 12px;
   }
+=======
+>>>>>>> parent of 369ed37 (add styles)
 }
