@@ -172,6 +172,12 @@
     line-height: 3.61;
 
     color: $btn-color;
+    transition: color $duration cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #aa6543;
+    }
   }
 
   #read-more:checked ~ .about__extra-description {
