@@ -4,20 +4,20 @@
   }
 }
 .program__container {
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: 320px) {
-    width: 100%;
+  @media screen and(min-width: 768px) {
+    max-width: 634px;
+    padding-left: 0;
+    padding-right: 0;
   }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 824px;
+  @media screen and(min-width: 1280px) {
+    max-width: 824px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .program__wrap {
@@ -34,7 +34,7 @@
   }
   @media screen and(min-width: 1280px) {
     margin-top: 67px;
-    max-width: 390px;
+    max-width: 392px;
   }
 }
 .program__title {
@@ -50,7 +50,6 @@
   color: $text;
 
   @media screen and(min-width: 768px) {
-    text-align: left;
   }
   @media screen and(min-width: 1280px) {
     font-size: 36px;
@@ -128,6 +127,7 @@
   color: $text;
 }
 .program__item {
+  list-style-image: url();
 }
 .program__circles {
   display: flex;
@@ -138,6 +138,9 @@
   @media screen and(min-width: 768px) {
     max-width: 290px;
   }
+  @media screen and(min-width: 1280px) {
+    max-width: 392px;
+  }
 }
 .program__circle {
   display: flex;
@@ -146,8 +149,8 @@
   text-align: center;
   align-items: center;
   position: relative;
-  max-width: 142px;
-  max-height: 142px;
+  width: 142px;
+  height: 142px;
   border-radius: 50%;
   background: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
@@ -157,12 +160,20 @@
   @media screen and(min-width: 768px) {
     margin-right: 15px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 180px;
+    margin-right: 32px;
+  }
 }
 .program__circle:nth-child(2n) {
   margin-right: -6px;
   margin-top: 26px;
   @media screen and(min-width: 768px) {
     margin-right: -15px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-right: -32px;
   }
 }
 .program__donut {
@@ -177,12 +188,26 @@
   font-size: 18px;
   color: $text;
   margin-bottom: 13px;
+
+  @media screen and(min-width: 1280px) {
+    font-size: 24px;
+  }
 }
 .program__subtext {
   margin-bottom: 14px;
+  font-size: 14px;
+  @media screen and(min-width: 1280px) {
+    font-size: 18px;
+    margin-bottom: 17px;
+  }
 }
 .program__icon {
   width: 20px;
   height: 20px;
   margin-bottom: 9px;
+  @media screen and(min-width: 1280px) {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 12px;
+  }
 }
