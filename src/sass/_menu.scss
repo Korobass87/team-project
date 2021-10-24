@@ -13,7 +13,14 @@
 
   z-index: 999;
 
-  display: none;
+  transform: translateY(-100%);
+  transition: transform $duration linear;
+
+  // display: none;
+}
+
+.menu--container.is-open {
+  transform: translateY(0);
 }
 
 .menu__top {
@@ -42,7 +49,7 @@
     display: none;
   }
 
-  background-color: pink;
+  // background-color: pink;
   border: none;
 
   cursor: pointer;

@@ -26,9 +26,14 @@
         </a>
 
         <!-- Кнопка открытия меню -->
-        <button class="menu__button menu__button--open" type="button">
+        <button
+          type="button"
+          class="menu__button menu__button--open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu__open" width="30" height="16" aria-label="Переключатель мобильного меню">
-            <use href="/images/header/menu.svg"></use>
+            <use href="./images/svg/sprite.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
