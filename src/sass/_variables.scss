@@ -16,3 +16,8 @@ $shadow-form: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129
 $shadow-program: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
 $duration: 250ms;
+
+@mixin transition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+$fortransitions: 250ms cubic-bezier(0.4, 0, 0.2, 1);
