@@ -49,15 +49,16 @@
 
   background-color: transparent;
   border: none;
+  border-radius: 50%;
+  outline: none;
 
   cursor: pointer;
 
-  transform: fill $duration linear;
+  transition: fill $duration linear;
 
   &:hover,
   &:focus {
     fill: $btn-color;
-    border: $text;
   }
 
   @media screen and (min-width: 1280px) {
