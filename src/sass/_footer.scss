@@ -1,0 +1,74 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 1279px) and (min-width: 768px) {
+    max-width: 554px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 854px;
+    padding: 0;
+  }
+  &--footer {
+    display: block;
+  }
+}
+.footer {
+  padding-top: 74px;
+}
+.social-list--footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  align-items: center;
+}
+.social-list__item {
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social-list__link {
+  border-radius: 50%;
+  color: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  transition: color $fortransitions, background-color $fortransitions;
+
+  &:hover,
+  &:focus,
+  &:active {
+    width: 24px;
+    height: 24px;
+    color: $btn-color;
+    background-color: $bg-color;
+  }
+}
+.social-list__icon {
+  fill: currentColor;
+}
+.auth-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.auth-nav__link {
+  font-family: $font;
+  font-size: 16px;
+  color: $text;
+  @include transition(color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ab816c;
+  }
+}
+.auth-nav__icon {
+  fill: currentColor;
+}
