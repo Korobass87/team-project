@@ -42,6 +42,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
 }
 .register__wrap {
   @media screen and (max-width: 767px) {
@@ -90,6 +94,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
 }
 .register__date-text {
   font-family: $font;
@@ -108,6 +115,7 @@
     margin-bottom: 34px;
   }
   @media screen and (min-width: 1280px) {
+    font-size: 20px;
     text-align: right;
     margin-bottom: 30px;
   }
@@ -125,6 +133,9 @@
   }
   @media screen and (min-width: 768px) {
     text-align: right;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
   }
 }
 hr {
