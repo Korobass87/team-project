@@ -47,20 +47,21 @@
     right: 67px;
   }
 
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-
   background-color: transparent;
-  border-radius: 50%;
   border: none;
-  outline: none;
 
   cursor: pointer;
+
+  transform: fill $duration linear;
 
   &:hover,
   &:focus {
     fill: $btn-color;
+    border: $text;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 
