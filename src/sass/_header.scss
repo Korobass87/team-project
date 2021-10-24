@@ -48,6 +48,7 @@
 .header__link {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 767px) {
     margin: auto;
@@ -58,16 +59,9 @@
     margin-bottom: 31px;
   }
 
-  @media screen and (min-width: 768px) {
-    justify-content: flex-start;
-  }
-
   @media screen and (min-width: 1280px) {
     margin-bottom: 65px;
   }
-
-  padding-left: 46px;
-  padding-right: 47px;
 
   width: 145px;
   height: 40px;

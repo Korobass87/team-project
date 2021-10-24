@@ -16,7 +16,9 @@
   transform: translateY(-100%);
   transition: transform $duration linear;
 
-  // display: none;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .menu--container.is-open {
@@ -49,10 +51,17 @@
     display: none;
   }
 
-  // background-color: pink;
+  background-color: transparent;
+  border-radius: 50%;
   border: none;
+  outline: none;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $btn-color;
+  }
 }
 
 .menu__button--open {
