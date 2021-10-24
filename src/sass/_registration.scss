@@ -1,8 +1,16 @@
 .register__container {
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 320px) {
-    width: 320px;
+  @media screen and (max-width: 767px) {
+    width: 290px;
+    height: 510px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    padding-top: 15px;
+    padding-bottom: 47px;
+    // background-color: pink;
+    background-color: $main-bg-color;
+    box-shadow: $shadow-form;
   }
   @media screen and (min-width: 768px) {
     width: 634px;
@@ -17,15 +25,19 @@
 }
 .register {
   @media screen and (max-width: 767px) {
-    width: 290px;
-    height: 510px;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    padding-top: 15px;
-    padding-bottom: 47px;
-    // background-color: pink;
-    background-color: $main-bg-color;
-    box-shadow: $shadow-form;
+    // width: 320px;
+
+    // height: 510px;
+
+    margin-left: auto;
+    margin-right: auto;
+    //   border-top-left-radius: 150px;
+    //   border-top-right-radius: 150px;
+    //   padding-top: 15px;
+    //   padding-bottom: 47px;
+    //   // background-color: pink;
+    //   background-color: $main-bg-color;
+    //   box-shadow: $shadow-form;
   }
 }
 
@@ -79,7 +91,13 @@
     position: relative;
   }
 }
-
+.register__wrap-date {
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 30px;
+    margin-top: 19px;
+  }
+}
 .register__date {
   font-family: $font;
   font-weight: 500;
@@ -93,6 +111,9 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    white-space: nowrap;
   }
   @media screen and (min-width: 1280px) {
     font-size: 20px;
@@ -138,27 +159,7 @@
     font-size: 20px;
   }
 }
-hr {
-  margin: 0;
-  border: 1px solid rgba(171, 129, 108, 0.5);
-  @media screen and (max-width: 767px) {
-    margin-bottom: 11px;
-  }
-  @media screen and (min-width: 768px) {
-    height: 190px;
-    width: 1px;
-    position: absolute;
-    left: 179px;
-    top: 35px;
-  }
-  @media screen and (min-width: 1280px) {
-    height: 190px;
-    width: 1px;
-    position: absolute;
-    left: 264px;
-    top: 35px;
-  }
-}
+
 .register__form-title {
   font-family: $font;
   font-weight: 400;
@@ -212,7 +213,7 @@ hr {
   border-bottom: 1px solid $btn-color;
   @media screen and (max-width: 767px) {
     width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 
     //   &:last-child {
     //     margin-bottom: 0;
@@ -265,11 +266,12 @@ input:invalid:not(:placeholder-shown) {
 }
 .register__cover {
   display: block;
-}
-.register__wrap-date {
+  @media screen and (max-width: 767px) {
+    border-top: 1px solid rgba(171, 129, 108, 0.5);
+    padding-top: 11px;
+  }
   @media screen and (min-width: 768px) {
-    display: block;
-    margin-right: 60px;
-    margin-top: 19px;
+    border-left: 1px solid rgba(171, 129, 108, 0.5);
+    padding-left: 30px;
   }
 }
