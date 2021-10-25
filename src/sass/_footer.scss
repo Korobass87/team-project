@@ -17,7 +17,11 @@
   }
 }
 .footer {
-  padding-top: 74px;
+  padding-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 21px;
+  }
 }
 .social-list--footer {
   display: flex;
