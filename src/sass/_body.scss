@@ -16,11 +16,11 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/bg/donuts-tab.png), url(../images/bg/bg1-tab.png),
-      url(../images/bg/flover-tab.png), url(../images/bg/bg2-tab.png);
+    background-image: url(../images/bg/bg1-tab.png), url(../images/bg/flover-tab.png),
+      url(../images/bg/bg2-tab.png);
     background-repeat: no-repeat;
-    background-size: 361px 378px, 100% 622px, 147px 144px, 100% 1260px;
-    background-position: right 137px top, left top, right bottom, center bottom 63px;
+    background-size: 100% 622px, 147px 144px, 100% 1260px;
+    background-position: left top, right bottom, center bottom 63px;
     background-color: #fffff9;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -33,20 +33,18 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/bg/spoon.png), url(../images/bg/donuts-desk.png),
-      url(../images/bg/bg1-desk.png), url(../images/bg/flover-desk.png),
+    background-image: url(../images/bg/bg1-desk.png), url(../images/bg/flover-desk.png),
       url(../images/bg/bg2-desk.png);
     background-repeat: no-repeat;
-    background-size: 142px 450px, 719px 600px, 100% 1035px, 319px 184px, 100% 1599px;
-    background-position: left top 166px, right top, left top, right bottom, center bottom;
+    background-size: 100% 1035px, 319px 184px, 100% 1599px;
+    background-position: left top, right bottom, center bottom;
     background-color: #fffff9;
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg/spoon2x.png), url(../images/bg/donuts-desk2x.png),
-        url(../images/bg/bg1-desk.png), url(../images/bg/flover-desk2x.png),
+      background-image: url(../images/bg/bg1-desk.png), url(../images/bg/flover-desk2x.png),
         url(../images/bg/bg2-desk.png);
     }
   }
