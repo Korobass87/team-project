@@ -1,5 +1,10 @@
 .menu--container {
-  padding: 25px 65px;
+  @media screen and (max-width: 767px) {
+    padding: 20px 21px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 25px 67px;
+  }
 
   position: fixed;
   top: 0;
@@ -29,7 +34,10 @@
   display: flex;
   justify-content: center;
 
-  margin-bottom: 40px;
+  position: relative;
+
+  // margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .menu__button {
@@ -37,15 +45,8 @@
   padding: 0;
 
   position: absolute;
-  @media screen and (max-width: 767px) {
-    top: 20px;
-    right: 21px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 25px;
-    right: 67px;
-  }
+  top: 0;
+  right: 0;
 
   background-color: transparent;
   border: none;
@@ -69,18 +70,19 @@
 .menu__button--open {
   position: absolute;
   @media screen and (max-width: 767px) {
-    top: 8px;
+    top: 15px;
     right: 15px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 0;
+    top: 26px;
     right: 67px;
   }
 }
 
 .menu__item:not(:last-child) {
-  margin-bottom: 45px;
+  // margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .menu__nav-link {
