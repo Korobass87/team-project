@@ -1,5 +1,5 @@
 body {
-  height: 3317px;
+  height: auto;
   background-image: url(../images/bg/donuts-mob.png), url(../images/bg/bg1-mob.png),
     url(../images/bg/bg2-mob.png), url(../images/bg/flover-mob.png);
   background-repeat: no-repeat;
@@ -16,7 +16,6 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    height: 2465px;
     background-image: url(../images/bg/donuts-tab.png), url(../images/bg/bg1-tab.png),
       url(../images/bg/flover-tab.png), url(../images/bg/bg2-tab.png);
     background-repeat: no-repeat;
@@ -34,12 +33,11 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
-    height: 3171px;
     background-image: url(../images/bg/spoon.png), url(../images/bg/donuts-desk.png),
       url(../images/bg/bg1-desk.png), url(../images/bg/flover-desk.png),
       url(../images/bg/bg2-desk.png);
     background-repeat: no-repeat;
-    background-size: 142px 450px, 719px 600px, 100% 1035px, 638px 368px, 100% 1599px;
+    background-size: 142px 450px, 719px 600px, 100% 1035px, 319px 184px, 100% 1599px;
     background-position: left top 166px, right top, left top, right bottom, center bottom;
     background-color: #fffff9;
 
