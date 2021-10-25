@@ -21,6 +21,7 @@
 
 .contact__title {
   font-family: $font-sec;
+  font-weight: 400;
   font-size: 24px;
   line-height: 2.7;
   color: $text;
@@ -49,6 +50,7 @@
 .contact__appeal {
   color: $text;
   margin-bottom: 27px;
+  font-weight: 400;
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
