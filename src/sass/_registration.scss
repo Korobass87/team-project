@@ -267,6 +267,7 @@ input:invalid:not(:placeholder-shown) {
   border-color: transparent;
   cursor: pointer;
   margin: 0;
+  padding: 0;
   @media screen and (max-width: 767px) {
     text-align: center;
     margin-left: 60px;
