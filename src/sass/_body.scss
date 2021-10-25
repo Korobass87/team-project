@@ -1,18 +1,18 @@
 body {
   height: auto;
-  background-image: url(../images/bg/donuts-mob.png), url(../images/bg/bg1-mob.png),
-    url(../images/bg/bg2-mob.png), url(../images/bg/flover-mob.png);
+  background-image: url(../images/bg/bg1-mob.png), url(../images/bg/bg2-mob.png),
+    url(../images/bg/flover-mob.png);
   background-repeat: no-repeat;
-  background-size: 117px 113px, 100% 416px, 100% 1214px, 87px 64px;
-  background-position: left top, left top, center bottom 216px, right bottom;
+  background-size: 100% 416px, 100% 1214px, 87px 64px;
+  background-position: left top, center bottom 216px, right bottom;
   background-color: #fffff9;
 
   @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/bg/donuts-mob2x.png), url(../images/bg/bg1-mob.png),
-      url(../images/bg/bg2-mob.png), url(../images/bg/flover-mob2x.png);
+    background-image: url(../images/bg/bg1-mob.png), url(../images/bg/bg2-mob.png),
+      url(../images/bg/flover-mob2x.png);
   }
 
   @media screen and (min-width: 768px) {
@@ -27,8 +27,8 @@ body {
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg/donuts-tab2x.png), url(../images/bg/bg1-tab.png),
-        url(../images/bg/flover-tab2x.png), url(../images/bg/bg2-tab.png);
+      background-image: url(../images/bg/bg1-tab.png), url(../images/bg/flover-tab2x.png),
+        url(../images/bg/bg2-tab.png);
     }
   }
 
