@@ -1,6 +1,7 @@
 .header--geometry {
   @media screen and (max-width: 767px) {
     padding-top: 7px;
+    padding-bottom: 4px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -10,7 +11,8 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 31px;
-    padding-bottom: 140px;
+    // padding-bottom: 140px;
+    padding-bottom: 56px;
   }
 }
 
