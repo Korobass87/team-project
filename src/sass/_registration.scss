@@ -25,6 +25,16 @@
   }
 }
 .register {
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 77px;
+  }
+
   @media screen and (max-width: 767px) {
     // width: 320px;
 
