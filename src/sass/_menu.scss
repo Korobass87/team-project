@@ -70,13 +70,13 @@
 .menu__button--open {
   position: absolute;
   @media screen and (max-width: 767px) {
-    top: 15px;
+    top: 8px;
     right: 15px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 26px;
-    right: 67px;
+    top: 0px;
+    right: 0px;
   }
 }
 

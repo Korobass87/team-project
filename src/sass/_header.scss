@@ -15,6 +15,7 @@
 }
 
 .header__container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
 
@@ -191,4 +192,93 @@
 .social-list__link:hover,
 .social-list__link:focus {
   fill: $btn-color;
+}
+
+.header__container::before {
+  background-size: 100%;
+  @media screen and (max-width: 767px) {
+    z-index: -1;
+    background-size: 100%;
+    display: block;
+    content: '';
+    width: 132px;
+    height: 114px;
+    position: absolute;
+    left: -12px;
+    top: -7px;
+    background-image: url(../images/bg/don-mob.png);
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/don-mob2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+    content: '';
+    width: 380px;
+    height: 361px;
+    position: absolute;
+    right: 70px;
+    top: -27px;
+    background-image: url(../images/bg/donuts-tab.png);
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/donuts-tab2x.png);
+      width: 380px;
+      height: 361px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    content: '';
+    width: 264px;
+    height: 450px;
+    position: absolute;
+    left: -351px;
+    top: 166px;
+    background-image: url(../images/bg/spoon-full.png);
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/spoon-full2x.png);
+    }
+  }
+}
+
+.header__container::after {
+  display: none;
+  background-size: 100%;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    z-index: -1;
+    content: '';
+    width: 795px;
+    height: 660px;
+    position: absolute;
+    right: -310px;
+    top: -31px;
+    background-image: url(../images/bg/don-full.png);
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/don-full2x.png);
+    }
+  }
 }
