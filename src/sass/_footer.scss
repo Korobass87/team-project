@@ -17,16 +17,9 @@
   }
 }
 .footer {
-  padding-top: 47px;
   padding-bottom: 19px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 50px;
-    padding-bottom: 21px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 74px;
     padding-bottom: 21px;
   }
 }
