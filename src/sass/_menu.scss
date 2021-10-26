@@ -98,3 +98,14 @@
     color: #876655;
   }
 }
+
+.menu__logo {
+  width: 190px;
+  height: 85px;
+
+  &:hover .fill {
+    fill: #aa6543;
+    stroke: #aa6543;
+    stroke-width: 0.5;
+  }
+}
