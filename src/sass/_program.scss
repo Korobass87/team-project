@@ -122,6 +122,7 @@
   }
 }
 .program__items {
+  position: relative;
   &:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -135,15 +136,16 @@
 }
 
 .program__item {
-  display: flex;
-  align-items: baseline;
+  padding-left: 20px;
   &:before {
     content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
     display: block;
     width: 16px;
     height: 16px;
     background-image: url(../images/svg/donut.svg);
-    margin-right: 10px;
   }
 }
 
