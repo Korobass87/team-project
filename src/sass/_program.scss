@@ -49,6 +49,7 @@
   padding: 0;
   color: $text;
   @media screen and(min-width: 768px) {
+    text-align: left;
   }
   @media screen and(min-width: 1280px) {
     font-size: 36px;
@@ -121,10 +122,23 @@
   }
 }
 .program__item {
+  position: relative;
   margin-bottom: 10px;
   margin-left: 25px;
-  list-style: outside url('../images/svg/donut.svg');
-
+  /* list-style: outside url('../images/svg/donut.svg'); */
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/svg/donut.svg);
+    margin-left: -25px;
+    @media screen and(min-width: 1280px) {
+      margin-top: 2px;
+    }
+  }
   @media screen and(min-width: 1280px) {
     margin-bottom: 15px;
   }
