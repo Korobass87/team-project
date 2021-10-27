@@ -1,6 +1,10 @@
 .program {
+  padding-bottom: 25px;
   @media screen and(min-width: 768px) {
-    padding-top: 6px;
+    padding-bottom: 51px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-bottom: 68px;
   }
 }
 .program__container {
@@ -35,7 +39,6 @@
     margin-right: 38px;
   }
   @media screen and(min-width: 1280px) {
-    margin-top: 67px;
     margin-right: 40px;
     max-width: 392px;
   }
@@ -76,6 +79,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: $text;
+  margin-top: 10px;
   @media screen and(max-width: 1279px) {
     display: none;
   }
@@ -160,7 +164,7 @@
   }
   @media screen and(min-width: 1280px) {
     max-width: 392px;
-    margin-top: 110px;
+    margin-top: 38px;
   }
 }
 .program__circle {
