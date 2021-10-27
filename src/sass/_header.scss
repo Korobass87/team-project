@@ -268,17 +268,18 @@
 }
 
 .header__container::after {
-  display: none;
   background-size: 100%;
 
   @media screen and (min-width: 1280px) {
     display: block;
     z-index: -1;
     content: '';
-    width: 795px;
-    height: 660px;
+    max-width: 795px;
+    max-height: 660px;
+    width: 51vw;
+    height: 41.7vw;
     position: absolute;
-    right: -310px;
+    right: -17.21vw;
     top: -31px;
     background-image: url(../images/bg/don-full.png);
     background-repeat: no-repeat;
