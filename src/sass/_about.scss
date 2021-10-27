@@ -88,9 +88,7 @@
     left: -58px;
   }
   @media screen and(min-width: 1280px) {
-    position: absolute;
-    top: -60px;
-    left: -140px;
+    display: none;
   }
 }
 .about__text {
