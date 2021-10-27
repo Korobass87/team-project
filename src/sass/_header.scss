@@ -203,16 +203,6 @@
   margin-right: 9.47px;
 }
 
-// .social-list__link {
-//   fill: $text;
-//   @include transition(fill);
-
-//   &:hover,
-//   &:focus {
-//     fill: $btn-color;
-//   }
-// }
-
 .header__container::before {
   background-size: 100%;
   @media screen and (max-width: 767px) {
@@ -310,10 +300,11 @@
     width: 158px;
     height: 71px;
   }
-}
 
-.header__logo:hover .fill {
-  fill: #aa6543;
-  stroke: #aa6543;
-  stroke-width: 0.5;
+  &:hover .fill,
+  &:focus .fill {
+    fill: #aa6543;
+    stroke: #aa6543;
+    stroke-width: 0.5;
+  }
 }
