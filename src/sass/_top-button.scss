@@ -5,9 +5,9 @@ body {
 .top-wrap {
   position: absolute;
   display: block;
-  top: 100vh;
+  top: 130vh;
   right: 50px;
-  height: calc(100% - 100vh);
+  height: calc(100% - 130vh);
   width: 100px;
 
   @media screen and (max-width: 767px) {

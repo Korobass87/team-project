@@ -1,6 +1,8 @@
 .about__container {
   margin-left: auto;
   margin-right: auto;
+  padding-right: 0;
+  padding-left: 0;
 
   @media screen and (max-width: 767px) {
     padding-left: 15px;
@@ -88,7 +90,7 @@
   @media screen and(min-width: 1280px) {
     position: absolute;
     top: 0px;
-    left: -159px;
+    left: -140px;
   }
 }
 .about__text {
