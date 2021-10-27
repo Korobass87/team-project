@@ -1,4 +1,4 @@
-.menu--container {
+.menu--geometry {
   @media screen and (max-width: 767px) {
     padding: 20px 21px;
   }
@@ -19,47 +19,88 @@
   z-index: 999;
 
   transform: translateY(-100%);
-  transition: transform $duration linear;
+  @include transition(transform);
 
   @media screen and (min-width: 1280px) {
     display: none;
   }
+
+  &.is-open {
+    transform: translateY(0);
+  }
 }
 
-.menu--container.is-open {
-  transform: translateY(0);
+.menu__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 278px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 634px;
+  }
 }
 
 .menu__top {
   display: flex;
   justify-content: center;
 
-  position: relative;
-
   // margin-bottom: 40px;
   margin-bottom: 30px;
+}
+
+.menu__button-svg {
+  @include transition(fill);
 }
 
 .menu__button {
   margin: 0;
   padding: 0;
-
-  position: absolute;
-  top: 0;
-  right: 0;
+  min-height: 40px;
+  min-width: 40px;
 
   background-color: transparent;
   border: none;
   border-radius: 50%;
   outline: none;
-
   cursor: pointer;
 
-  transition: fill $duration linear;
+  @include transition(background-color);
 
   &:hover,
   &:focus {
+    background-color: $main-bg-color;
+  }
+
+  &:hover .menu__button-svg,
+  &:focus .menu__button-svg {
     fill: $btn-color;
+  }
+
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    top: -2px;
+    right: 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    top: 0;
+    right: 0;
+  }
+
+  &--accent {
+    @media screen and (max-width: 767px) {
+      top: -15px;
+      right: -15px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      top: 1px;
+      right: 5px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -67,25 +108,16 @@
   }
 }
 
-.menu__button--open {
-  position: absolute;
-  @media screen and (max-width: 767px) {
-    top: 8px;
-    right: 15px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 0px;
-    right: 0px;
-  }
-}
-
 .menu__item:not(:last-child) {
   // margin-bottom: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .menu__nav-link {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   font-family: $font;
   font-style: normal;
   font-weight: 500;
@@ -94,7 +126,10 @@
   text-align: center;
   color: $text;
 
-  &--accent {
+  @include transition(color);
+
+  &:hover,
+  &:focus {
     color: #876655;
   }
 }
@@ -103,7 +138,8 @@
   width: 190px;
   height: 85px;
 
-  &:hover .fill {
+  &:hover .fill,
+  &:focus .fill {
     fill: #aa6543;
     stroke: #aa6543;
     stroke-width: 0.5;
