@@ -1,0 +1,169 @@
+body {
+  position: relative;
+}
+
+.top-wrap {
+  position: absolute;
+  display: block;
+  top: 100vh;
+  right: 50px;
+  height: calc(100% - 100vh);
+  width: 100px;
+
+  @media screen and (max-width: 767px) {
+    right: 2vw;
+    width: 25px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    right: 25px;
+    width: 35px;
+  }
+}
+
+.top-button {
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  top: 75vh;
+  display: block;
+  @media screen and (max-width: 767px) {
+    width: 25px;
+    height: 25px;
+    top: 85vh;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 35px;
+    height: 70px;
+    top: 80vh;
+  }
+}
+
+.top-button::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  border-left: 15px solid #aa6543;
+  border-top: 15px solid #aa6543;
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid #aa6543;
+    border-top: 5px solid #aa6543;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 35px;
+    height: 35px;
+    border-left: 10px solid #aa6543;
+    border-top: 10px solid #aa6543;
+  }
+}
+
+.top-button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  border-left: 15px solid #aa6543;
+  border-top: 15px solid #aa6543;
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid #aa6543;
+    border-top: 5px solid #aa6543;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 35px;
+    height: 35px;
+    border-left: 10px solid #aa6543;
+    border-top: 10px solid #aa6543;
+  }
+}
+
+.top-button::after,
+.top-button::before {
+  animation: back_to_top 3s linear infinite;
+}
+.top-button::after {
+  animation-delay: 1.5s;
+}
+
+@keyframes back_to_top {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 66px) rotate(45deg);
+  }
+
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0px, 33px) rotate(45deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0px, 0px) rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @keyframes back_to_top {
+    0% {
+      opacity: 0;
+      transform: translate(0px, 26px) rotate(45deg);
+    }
+
+    10% {
+      opacity: 1;
+    }
+    50% {
+      transform: translate(0px, 13px) rotate(45deg);
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0px, 0px) rotate(45deg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  @keyframes back_to_top {
+    0% {
+      opacity: 0;
+      transform: translate(0px, 46px) rotate(45deg);
+    }
+
+    10% {
+      opacity: 1;
+    }
+    50% {
+      transform: translate(0px, 23px) rotate(45deg);
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0px, 0px) rotate(45deg);
+    }
+  }
+}
